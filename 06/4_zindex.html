@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>z-index</title>
+    <!-- internal CSS - not suggested -->
+    <style>
+    #posdiv1 {
+        position: relative;
+        top:      10px;
+        left:     10px;
+        z-index:  1;
+    }
+
+    #posdiv2 {
+        position: relative;
+        top:      -100px;
+        left:     100px;
+        z-index:  -2; 
+    }
+
+    #posdiv3 {
+        position: relative;
+        top:      -200px;
+        left:     200px;
+        z-index:  -3; 
+    }
+
+    img {
+     border-radius: 40px;
+    }
+    
+    </style>
+  </head>
+  
+  <body>
+  <h1>z-index</h1>
+   <div id="posdiv1"><img src="images/renoir1.jpg"></div>
+   <div id="posdiv2"><img src="images/renoir2.jpg"></div>
+   <div id="posdiv3"><img src="images/renoir3.jpg"></div> 
+  </body>
+</html>
